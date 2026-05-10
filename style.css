@@ -398,6 +398,12 @@
             color: var(--text-dim);
         }
 
+        .trail-intro li {
+            font-style: italic;
+            color: var(--text-dim);
+            margin-left: 25px;
+        }
+
         .trail-intro p:last-child {
             margin-bottom: 0;
         }
