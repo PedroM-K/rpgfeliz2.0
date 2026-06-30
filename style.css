@@ -668,6 +668,10 @@
             gap: 14px;
         }
 
+        .recipe-grid.block-layout {
+            display: block;
+        }
+
         .recipe-card {
             background: var(--bg-card);
             border: 1px solid var(--border);

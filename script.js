@@ -30,8 +30,8 @@
                 document.querySelectorAll('.sub-btn[data-sub="' + subGroup + '"]')
                     .forEach(b => b.classList.remove('active'));
 
-                const parentTab = btn.closest('.tab-panel');
-                parentTab.querySelectorAll('.trail-panel')
+                const scope = btn.closest('.element-block') || btn.closest('.tab-panel');
+                scope.querySelectorAll('.trail-panel')
                     .forEach(p => p.classList.remove('active'));
 
                 btn.classList.add('active');

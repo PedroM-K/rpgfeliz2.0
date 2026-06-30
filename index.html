@@ -60,25 +60,33 @@
                     qualquer personagem ao atingir os pré-requisitos descritos.</p>
             </div>
 
-            <div class="abilities-grid">
-                <div class="ability-card nex-special open">
-                    <div class="ability-header" onclick="toggleCard(this)">
-                        <span class="nex-badge" style="background:var(--gold); color:#000">NEX 50%</span>
-                        <span class="ability-name">Restrição Celestial</span>
-                        <span class="toggle-icon">&#9662;</span>
-                    </div>
-                    <div class="ability-body">
-                        <p><em>"A Restrição Celestial é uma limitação imposta no feiticeiro em seu nascimento. Com isso,
-                                uma espécie de contrato é feito dando uma condição negativa em troca de uma positiva. A
-                                condição negativa pode ser a redução ou anulação de sua energia espiritual ou então
-                                deixar o corpo do indivíduo mais frágil"</em></p>
-                        <p>No ordem um personagem pode receber uma Restrição ao atingir <strong>NEX 50%</strong> ao
-                            invés de versatilidade. A Restrição celestial é única para cada jogador. Para se tornar
-                            restringido é necessário atingir certas condições com base na sua campanha — um exemplo
-                            seria não possuir Poderes Paranormais.</p>
-                        <p>Um ser restringido recebe <strong>3 habilidades passivas</strong>, podendo implicar
-                            desvantagens em ações realizadas contra o restringido ou somando bônus para o restringido.
-                        </p>
+            <div class="sub-nav-wrap">
+                <div class="sub-nav-section">
+                    <button class="sub-btn active" data-sub="geral" data-panel="g-restricao">Restrição Celestial</button>
+                </div>
+            </div>
+
+            <div id="g-restricao" class="trail-panel active">
+                <div class="abilities-grid">
+                    <div class="ability-card nex-special open">
+                        <div class="ability-header" onclick="toggleCard(this)">
+                            <span class="nex-badge" style="background:var(--gold); color:#000">NEX 50%</span>
+                            <span class="ability-name">Restrição Celestial</span>
+                            <span class="toggle-icon">&#9662;</span>
+                        </div>
+                        <div class="ability-body">
+                            <p><em>"A Restrição Celestial é uma limitação imposta no feiticeiro em seu nascimento. Com isso,
+                                    uma espécie de contrato é feito dando uma condição negativa em troca de uma positiva. A
+                                    condição negativa pode ser a redução ou anulação de sua energia espiritual ou então
+                                    deixar o corpo do indivíduo mais frágil"</em></p>
+                            <p>No ordem um personagem pode receber uma Restrição ao atingir <strong>NEX 50%</strong> ao
+                                invés de versatilidade. A Restrição celestial é única para cada jogador. Para se tornar
+                                restringido é necessário atingir certas condições com base na sua campanha — um exemplo
+                                seria não possuir Poderes Paranormais.</p>
+                            <p>Um ser restringido recebe <strong>3 habilidades passivas</strong>, podendo implicar
+                                desvantagens em ações realizadas contra o restringido ou somando bônus para o restringido.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,22 +107,16 @@
             </div>
 
             <div id="orig-atormentado" class="trail-panel active">
-                <div class="trail-intro">
-                    <span class="label">Origem — Atormentado</span>
-                </div>
-                <div class="info-card">
-                    <h3>Perícias Treinadas</h3>
-                    <p><strong>Ocultismo</strong> e <strong>Vontade</strong></p>
-                </div>
                 <div class="abilities-grid">
                     <div class="ability-card nex-special open">
                         <div class="ability-header" onclick="toggleCard(this)">
-                            <span class="nex-badge" style="background:var(--gold);color:#000">HABILIDADE</span>
-                            <span class="ability-name">Ferimentos do Passado</span>
+                            <span class="nex-badge" style="background:var(--gold);color:#000">ORIGEM</span>
+                            <span class="ability-name">Atormentado</span>
                             <span class="toggle-icon">&#9662;</span>
                         </div>
                         <div class="ability-body">
-                            <p>Suas memórias sempre lhe atormentaram, e o passado sempre machuca. Você recebe
+                            <p><strong>Perícias Treinadas:</strong> Ocultismo e Vontade.</p>
+                            <p><strong>Ferimentos do Passado (Habilidade):</strong> Suas memórias sempre lhe atormentaram, e o passado sempre machuca. Você recebe
                                 <strong>resistência mental 2</strong> e <strong>+2 em uma perícia com atributo base INT
                                     ou PRE</strong>, mas recebe <strong>–1d20 em testes de Intuição</strong>.
                             </p>
@@ -209,9 +211,27 @@
                 <div class="element-block-header" onclick="toggleElementBlock(this)">
                     <span>CONTEMPLAÇÃO</span><span class="elem-toggle">&#9662;</span>
                 </div>
-                <div class="recipe-grid">
-                    <div class="recipe-card">
-                        <p class="placeholder">Em construção.</p>
+                <div class="recipe-grid block-layout">
+                    <div class="sub-nav-wrap" style="border-bottom: none; margin-bottom: 12px; padding-bottom: 0;">
+                        <div class="sub-nav-section">
+                            <button class="sub-btn active" data-sub="r-contemplacao" data-panel="rit-potencializar">Potencializar Memórias</button>
+                        </div>
+                    </div>
+
+                    <div id="rit-potencializar" class="trail-panel active">
+                        <div class="ritual-card" style="margin: 0;">
+                            <h4>Potencializar Memórias "Saudosas/Pavorosas"</h4>
+                            <div class="ritual-stats">
+                                <span class="ritual-stat">Contemplação 1</span>
+                                <span class="ritual-stat">Execução: Padrão</span>
+                                <span class="ritual-stat">Alcance: Pessoal</span>
+                                <span class="ritual-stat">Alvo: Você</span>
+                                <span class="ritual-stat">Duração: Sustentado</span>
+                            </div>
+                            <p>Ao conjurar o ritual escolha entre "Saudosas/Pavorosas" e aplique os efeitos condizentes à escolha.</p>
+                            <p><strong>Saudosas:</strong> Suas "memórias" mais preciosas se tornam realidade para você. Enquanto manter o ritual ativo você fica desprevenido em relação a todos os seres fora do alcance corpo a corpo, em troca, enquanto manter o ritual ativo todos os rituais que você conjura recebem +5 em seus danos/curas.</p>
+                            <p><strong>Pavorosas:</strong> <em>[A ser definido]</em></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -264,9 +284,28 @@
                 <div class="element-block-header" onclick="toggleElementBlock(this)">
                     <span>ADAPTAÇÃO</span><span class="elem-toggle">&#9662;</span>
                 </div>
-                <div class="recipe-grid">
-                    <div class="recipe-card">
-                        <p class="placeholder">Em construção.</p>
+                <div class="recipe-grid block-layout">
+                    <div class="sub-nav-wrap" style="border-bottom: none; margin-bottom: 12px; padding-bottom: 0;">
+                        <div class="sub-nav-section">
+                            <button class="sub-btn active" data-sub="r-adaptacao" data-panel="rit-transfiguracao">Transfiguração Inerte</button>
+                        </div>
+                    </div>
+
+                    <div id="rit-transfiguracao" class="trail-panel active">
+                        <div class="ritual-card" style="margin: 0;">
+                            <h4>Transfiguração Inerte</h4>
+                            <div class="ritual-stats">
+                                <span class="ritual-stat">Adaptação 4</span>
+                                <span class="ritual-stat">Execução: Padrão</span>
+                                <span class="ritual-stat">Alcance: Toque</span>
+                                <span class="ritual-stat">Alvo: 1 Ser</span>
+                                <span class="ritual-stat">Resistência: Fortitude</span>
+                                <span class="ritual-stat">Duração: Veja Texto</span>
+                            </div>
+                            <p>Você altera o formato da alma do seu alvo a tornando perfeita. Ao conjurar o ritual você pode escolher entre: causar <strong>15d10+15 de dano de Adaptação</strong> e aplicar uma condição que não seja ou cause: morrendo, inconsciente, indefeso ou petrificado (fortitude reduz metade); transformar o ser em uma criatura de VD equivalente com metade dos seus pontos de vida a sua escolha até o fim da cena (fortitude ignora); ou <strong>curar completamente a vida</strong> do alvo.</p>
+                            <p><strong>Discente (+5 PE):</strong> muda o dano para <strong>20d10+20</strong>; se transformar um ser, a VD pode ser equivalente a metade do alvo.</p>
+                            <p><strong>Verdadeiro (+10 PE):</strong> muda o dano para <strong>25d10+25</strong>, perde a restrição de condição; se transformar você pode escolher qualquer criatura ou animal e a transformação se torna permanente, e a cura pode reconstruir membros. <em>Requer Afinidade.</em></p>
+                        </div>
                     </div>
                 </div>
             </div>
